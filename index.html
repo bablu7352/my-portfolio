@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal portfolio and contact links.">
+  <meta name="theme-color" content="#101712">
+  <title>Your Name | Personal Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="glow glow-a"></div><div class="glow glow-b"></div>
+  <header class="topbar">
+    <a class="logo" href="#home"><span class="logo-mark">Y</span><span>YOUR<span class="green">SPACE</span></span></a>
+    <nav><a href="#about">About</a><a href="#highlights">Highlights</a><a href="#contact" class="nav-contact">Contact <span>↗</span></a></nav>
+  </header>
+
+  <main>
+    <section class="hero wrap" id="home">
+      <div class="hero-copy">
+        <div class="availability"><i></i> WELCOME TO MY PERSONAL SPACE</div>
+        <p class="overline">HELLO, I'M</p>
+        <h1>Your Name<span class="green">.</span></h1>
+        <h2>Creating my own path<span class="green">.</span></h2>
+        <p class="intro">A little about me, the things I love, and the work I'm proud to share. Thanks for stopping by.</p>
+        <div class="actions"><a class="btn primary" href="#contact">Connect with me <span>↗</span></a><a class="btn secondary" href="#about">Discover more <span>↓</span></a></div>
+        <div class="social-shortcuts">
+          <!-- Add your profile URLs in the SOCIAL LINKS section near the bottom of this file. -->
+          <a href="#contact">Instagram <span>↗</span></a><a href="#contact">Facebook <span>↗</span></a><a href="#contact">WhatsApp <span>↗</span></a>
+        </div>
+      </div>
+      <div class="portrait-wrap">
+        <div class="portrait-ring"></div><div class="portrait-card"><img src="assets/profile.png" alt="Your profile photo"></div>
+        <div class="photo-tag"><span class="tag-dot"></span> A LITTLE INTRODUCTION</div>
+        <div class="floating-star">✳</div>
+      </div>
+      <div class="hero-foot"><span>PERSONAL PORTFOLIO</span><span>SCROLL TO EXPLORE ↓</span></div>
+    </section>
+
+    <section class="section wrap" id="about">
+      <div class="section-label">01 / ABOUT ME</div>
+      <div class="about-layout">
+        <h2>Not just a profile.<br><span class="dim">A story in progress.</span></h2>
+        <div class="about-copy">
+          <p>I'm <strong>Your Name</strong>. This is my corner of the internet — a place to introduce myself, share what I do, and make it easy to connect.</p>
+          <p>I'm always learning, meeting new people, and looking forward to new experiences. Feel free to reach out through any of my social links.</p>
+          <span class="signature">GOOD THINGS ARE IN PROGRESS <b>✳</b></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="highlights">
+      <div class="section-label">02 / A FEW HIGHLIGHTS</div>
+      <div class="section-title"><h2>What makes me, <span class="green">me.</span></h2><p>Replace these cards with your interests, work, goals, or achievements.</p></div>
+      <div class="cards">
+        <article class="info-card"><span class="card-number">01</span><div class="card-icon">✦</div><h3>My Interests</h3><p>Share the things you enjoy, the topics you follow, and what inspires you.</p><span class="card-line"></span></article>
+        <article class="info-card"><span class="card-number">02</span><div class="card-icon">↗</div><h3>My Journey</h3><p>Add a few words about your education, career, business, or personal journey.</p><span class="card-line"></span></article>
+        <article class="info-card"><span class="card-number">03</span><div class="card-icon">◎</div><h3>My Goals</h3><p>Tell visitors what you're working towards and what opportunities excite you.</p><span class="card-line"></span></article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="wrap contact-inner">
+        <div class="section-label">03 / LET'S CONNECT</div>
+        <h2>One tap away<br>from a <span class="green">conversation.</span></h2>
+        <p>Add your real social media links below in the code. These buttons are ready for your profiles.</p>
+        <div class="contact-links">
+          <a class="contact-link" id="instagram" href="#" target="_blank" rel="noopener"><span class="social-icon">◎</span><span><small>FOLLOW ME ON</small><strong>Instagram</strong></span><b>↗</b></a>
+          <a class="contact-link" id="facebook" href="#" target="_blank" rel="noopener"><span class="social-icon">f</span><span><small>FIND ME ON</small><strong>Facebook</strong></span><b>↗</b></a>
+          <a class="contact-link" id="whatsapp" href="#" target="_blank" rel="noopener"><span class="social-icon">◔</span><span><small>MESSAGE ME ON</small><strong>WhatsApp</strong></span><b>↗</b></a>
+        </div>
+        <div class="contact-note">Looking forward to hearing from you <span>✳</span></div>
+        <div class="bottom-line"><span>YOUR NAME · PERSONAL PORTFOLIO</span><a href="#home">BACK TO TOP ↑</a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap footer"><a class="logo" href="#home"><span class="logo-mark">Y</span><span>YOUR<span class="green">SPACE</span></span></a><span>© <b id="year"></b> Your Name. Made with care.</span></footer>
+
+  <script>
+    // ==================== PERSONAL DETAILS ====================
+    // Replace the sample name in this file with your own name.
+    // Add your profile links below. Keep the quotes around each URL.
+    const SOCIAL_LINKS = {
+      instagram: "https://www.instagram.com/YOUR_USERNAME/",
+      facebook: "https://www.facebook.com/YOUR_PROFILE/",
+      whatsapp: "https://wa.me/91XXXXXXXXXX" // country code + number, digits only
+    };
+
+    // Buttons become active automatically after you add your real links.
+    for (const [network, url] of Object.entries(SOCIAL_LINKS)) {
+      const link = document.getElementById(network);
+      if (url && !url.includes("YOUR_") && !url.includes("XXXXXXXXXX")) {
+        link.href = url;
+      } else {
+        link.addEventListener("click", event => {
+          event.preventDefault();
+          alert("Please add your " + network + " link in index.html first.");
+        });
+      }
+    }
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
